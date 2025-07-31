@@ -12,7 +12,7 @@ public class ReminderService {
 
         Executor executor = Executors.newFixedThreadPool(10);
 
-        // Todo: Used supplyAsync if you want to return some value
+        // Todo: Used supplyAsync if you want to return some   value
         // Todo: Used runAsync if you don't want to return any value
 
         CompletableFuture<Void> listCompletableFuture = CompletableFuture.supplyAsync(() -> {
