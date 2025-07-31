@@ -3,20 +3,17 @@ package com.de.zahid.completableFuture;
 import com.de.zahid.datasource.EmployeeDatSource;
 import com.de.zahid.dto.Employee;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 public class ReminderService {
 
     public CompletableFuture<Void> sendRemainder() {
 
-        Executor executor = Executors.newFixedThreadPool(5);
+        Executor executor = Executors.newFixedThreadPool(10);
 
-        // Todo: Used supplyAsync if you need to return some value
-        // Todo: Used runAsync if you don't need to return any value
+        // Todo: Used supplyAsync if you want to return some value
+        // Todo: Used runAsync if you don't want to return any value
 
         CompletableFuture<Void> listCompletableFuture = CompletableFuture.supplyAsync(() -> {
             System.out.println("Employee data fetch : " + Thread.currentThread().getName());

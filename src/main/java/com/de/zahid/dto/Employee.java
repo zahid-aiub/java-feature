@@ -89,4 +89,19 @@ public class Employee {
     public void setRating(int rating) {
         this.rating = rating;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeId='" + employeeId + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", newJoiner='" + newJoiner + '\'' +
+                ", learningPending='" + learningPending + '\'' +
+                ", salary=" + salary +
+                ", rating=" + rating +
+                '}';
+    }
 }

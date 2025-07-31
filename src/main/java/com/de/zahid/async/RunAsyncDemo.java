@@ -45,7 +45,7 @@ public class RunAsyncDemo {
 
 
                 // Save data to the Database
-                System.out.println("Thread : " + Thread.currentThread().getName());
+                System.out.println("Thread ----> : " + Thread.currentThread().getName());
                 System.out.println(employees.size());
             } catch (IOException e) {
                 e.printStackTrace();

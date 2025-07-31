@@ -1,12 +1,10 @@
-package com.de.zahid.completableFuture;
+package com.de.zahid.task;
 
 /*
  * Click `Run` to execute the snippet below!
  */
 
-import java.io.*;
 import java.util.*;
-import java.util.stream.Collectors;
 
 
 public class Solution {
